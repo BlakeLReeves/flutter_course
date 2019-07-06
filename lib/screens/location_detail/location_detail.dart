@@ -7,7 +7,29 @@ class LocationDetail extends StatelessWidget {
       appBar: AppBar(
         title: Text('Hello'),
       ), // AppBar
-      body: Text(''),
-    ); // Scaffold
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.red,
+          ),
+          child: Text('Test 1'),
+        ),
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.green,
+          ),
+          child: Text('Test 2'),
+        ),
+        Container(
+          decoration: BoxDecoration(
+            color: Colors.blue,
+          ),
+          child: Text('Test 3'),
+        ),
+      ],
+    )); // Scaffold
   }
 }
